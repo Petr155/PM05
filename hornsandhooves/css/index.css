@@ -1,0 +1,16 @@
+a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+footer p{
+    font-style: italic;
+}
+footer a{
+    border: 1px solid black;
+    padding: 2px;
+}
+article p{
+    font-size: 18px;
+}

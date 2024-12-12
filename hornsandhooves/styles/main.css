@@ -1,0 +1,51 @@
+body{
+    background-color: wheat;
+}
+nav a,footer a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    color: rgb(128, 127, 127);
+    transition-duration: 0.5s;
+}
+footer p{
+    font-style: italic;
+}
+footer a{
+    border: 1px solid black;
+    padding: 2px;
+    
+}
+article p{
+    font-size: 18px;
+}
+#order{
+    background-color: whitesmoke;
+}
+h1,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
+}
+h1{
+    font-size: 38px;
+}
+h2{
+    font-size: 33px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(18, 18, 18);
+}
+img{
+    border: 3px blue dotted;
+}
+table img{
+    width: 100px;
+}
+table{
+    background-color: whitesmoke;
+}

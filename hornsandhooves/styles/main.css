@@ -1,24 +1,29 @@
 body{
     background-color: wheat;
 }
-nav a,footer a{
+nav a,footer a,span{
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
     color: rgb(18, 18, 18);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-a:hover{
-    color: rgb(128, 127, 127);
-    transition-duration: 0.5s;
+}   
+
+nav a:hover{
+    color: rgb(200, 200, 200);
+    transition-duration: 0.7s;
 }
 footer p{
     font-style: italic;
 }
 footer a{
-    border: 1px solid black;
-    padding: 2px;
-    
+    border: 2px solid black;
+    padding: 5px;
+    background-color: chocolate;
+}
+footer a:hover{
+    background-color: rgb(221, 136, 75);
+    transition-duration: 0.7s;
 }
 article p{
     font-size: 18px;
@@ -48,4 +53,17 @@ table img{
 }
 table{
     background-color: whitesmoke;
+}
+hr{
+    height: 2px;
+    background-color: black;
+}
+nav{
+    border: 2px black solid;
+    padding: 10px;
+    background-color: chocolate;
+}
+/*Ссылка на внешний ресурс*/
+a[href^="https://"]{
+    color: blue;
 }

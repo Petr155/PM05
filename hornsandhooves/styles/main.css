@@ -1,69 +1,125 @@
-body{
+body {
     background-color: wheat;
 }
-nav a,footer a,span{
+
+nav a,
+footer a,
+span {
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
     color: rgb(18, 18, 18);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}   
+}
 
-nav a:hover{
+nav a:hover {
     color: rgb(200, 200, 200);
     transition-duration: 0.7s;
 }
-footer p{
+
+footer p {
     font-style: italic;
 }
-footer a{
+
+footer a {
     border: 2px solid black;
     padding: 5px;
     background-color: chocolate;
 }
-footer a:hover{
+
+footer a:hover {
     background-color: rgb(221, 136, 75);
     transition-duration: 0.7s;
 }
-article p{
+
+article p {
     font-size: 18px;
 }
-#order{
+
+/*таблица заказов*/
+#order {
     background-color: whitesmoke;
 }
-h1,h2{
+
+h1,
+h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: chocolate;
 }
-h1{
+
+h1 {
     font-size: 38px;
 }
-h2{
+
+h2 {
     font-size: 33px;
 }
-p{
+
+p {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(18, 18, 18);
 }
-img{
+
+img {
     border: 3px blue dotted;
 }
-table img{
+
+table img {
     width: 100px;
 }
-table{
+
+table {
     background-color: whitesmoke;
 }
-hr{
+
+hr {
     height: 2px;
     background-color: black;
 }
-nav{
+
+nav {
     border: 2px black solid;
     padding: 10px;
     background-color: chocolate;
 }
+
 /*Ссылка на внешний ресурс*/
-a[href^="https://"]{
+a[href^="https://"] {
     color: blue;
+}
+
+/*двух колоночный макет*/
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+
+header {
+    padding: 5px;
+    background: #8fa09b;
+}
+
+nav {
+    width: 250px;
+    float: left;
+}
+
+main {
+    margin-left: 275px;
+    padding: 10px;
+    background: #fff;
+}
+
+footer {
+    background: #8fa09b;
+    color: #fff;
+    padding: 5px;
+    clear: left;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid blue;
+    background-color: lightblue;
 }

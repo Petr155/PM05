@@ -100,7 +100,7 @@ header {
     background: #8fa09b;
 }
 
-nav {
+#navLeft {
     width: 250px;
     float: left;
 }
@@ -143,4 +143,26 @@ nav ul li:hover{
 }
 #educationTable {
     border: 1px cadetblue solid;
+}
+/*пропажа ячейки при наведение*/
+#educationTable tr th:hover{
+    color: red;
+    transition-duration: 0.5s;
+}
+#educationTable tr td:hover{
+    color: whitesmoke;
+    transition-duration: 0.5s;
+}
+/*блок меню flexbox*/
+#navFlexbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navFlexbox a{
+    padding: 5px;
+}
+#navFlexbox a:hover{
+    transform: translateY(-3px);
+    transition-duration: 0.7s;
 }

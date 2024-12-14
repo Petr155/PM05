@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="img/icon.ico" type="image/x-icon">
     <style>
-        td{
+        td {
             padding: 20px;
         }
     </style>
@@ -16,119 +16,131 @@
 
 <body>
     <div id="container">
-    <header align="center">
-        <h1 id="up">Компания «Рога и копыта»</h1>
-        <h2>Мы работаем для Вас</h2>
-        <hr>
-    </header>
-    <nav align="center">
-        <ul>
-            <li><a href="index.html">Главная</a><br></li>
-            <li><a href="about.html">О компании</a><br></li>
-            <li><a href="employee.html">Наши сотрудники</a><br></li>
-            <li><a href="education.html">Обучение</a><br></li>
-            <li><a href="gallery.html">Галлерея</a><br></li>
-            <li><a href="order.html">Сделать заказ</a><br></li>
-            <li><a href="https://мвд.рф/">Мы чтим уголовный кодекс</a><br></li>
-            <li><a href="fonts.html">Стили шрифтов</a><br></li>
-        </ul>
-    </nav>
+        <header align="center">
+            <h1 id="up">Компания «Рога и копыта»</h1>
+            <h2>Мы работаем для Вас</h2>
+            <hr>
+            <nav align="center" id="navFlexbox">
 
-    <main>
-    <section align="center">
-        <h3>Ваш заказ</h3>
-        <article>
-            <table id="order" align="center" border="2">
-                <tr>
-                    <td align="left">
-                        <form action="/signup" method="POST">
-                            <p>
-                                <label>
-                                    <input type="radio" name="title" value="mr">
-                                    Наличный расчет
-                                </label>
-                                <label>
-                                    <input type="radio" name="title" value="mrs">
-                                    Безналичный расчет
-                                </label>
-                            </p>
-                            <p>
-                                <label>Фамилия</label>
-                                <input type="text" name="surname" placeholder="Иванов">
-                            </p>
-                            <p>
-                                <label>Имя</label>
-                                <input type="text" name="first_name" placeholder="Иван">
-                            </p>
-                            <p>
-                                <label>Отчество</label>
-                                <input type="text" name="patronymic" placeholder="Иванович">
-                            </p>
-                            <p>
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="primer@email.ru">
-                            </p>
-                            <p>
-                                <label>Телефон</label>
-                                <input type="tel" name="phone" placeholder="+78888888888">
-                            </p>
-                            <p>
-                                <label>Пароль</label>
-                                <input type="password" name="password">
-                            </p>
-                            <p>
-                                <label>Подтвердите пароль</label>
-                                <input type="password" name="password_confirm">
-                            </p>
-                            <p>
-                                <label>Федеральный округ</label>
-                                <select name="country">
-                                    <option>Центральный</option>
-                                    <option>Северо-Западный</option>
-                                    <option>Южный</option>
-                                    <option>Северо-Кавказкий</option>
-                                    <option>Приволжский</option>
-                                    <option>Уральский</option>
-                                    <option>Сибирский</option>
-                                    <option>Дальневосточный</option>
-                                </select>
-                            </p>
-                            <p>Заказываю</p>
-                            <p>
-                                <label>
-                                    <input type="checkbox" name="roga">
-                                    рога в количестве <input type="number"> штук
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input type="checkbox" name="kopita">
-                                    копыта в количестве <input type="number"> штук
-                                </label>
-                            </p>
-                            <p>Пожелания:<br>
-                                <label>
-                                    <textarea name="pogjelania" style="height: 50px; width: 200px;"></textarea>
-                                </label>
-                            </p>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <a href="employee.html">Наши сотрудники</a>
+                <a href="education.html">Обучение</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="order.html">Сделать заказ</a>
+                <a href="https://мвд.рф/">Мы чтим уголовный кодекс</a>
+                <a href="fonts.html">Стили шрифтов</a>
+            </nav>
+            <hr>
+        </header>
+        <nav align="left" id="navLeft">
+            <ul>
+                <li><a href="index.html">Главная</a><br></li>
+                <li><a href="about.html">О компании</a><br></li>
+                <li><a href="employee.html">Наши сотрудники</a><br></li>
+                <li><a href="education.html">Обучение</a><br></li>
+                <li><a href="gallery.html">Галерея</a><br></li>
+                <li><a href="order.html">Сделать заказ</a><br></li>
+                <li><a href="https://мвд.рф/">Мы чтим уголовный кодекс</a><br></li>
+                <li><a href="fonts.html">Стили шрифтов</a><br></li>
+            </ul>
+        </nav>
 
-                            <p>
-                                <button>
-                                    Подтвердить заказ
-                                </button>
-                            </p>
-                        </form>
-                    </td>
-                </tr>
-            </table>
-        </article>
-    </section>
-    </main>
-    <footer>
-        <p></p>
-        <a href="#up">Наверх</a>
-        <p>&copy; Бендер и компания</p>
-    </footer>
+        <main>
+            <section align="center">
+                <h3>Ваш заказ</h3>
+                <article>
+                    <table id="order" align="center" border="2">
+                        <tr>
+                            <td align="left">
+                                <form action="/signup" method="POST">
+                                    <p>
+                                        <label>
+                                            <input type="radio" name="title" value="mr">
+                                            Наличный расчет
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="title" value="mrs">
+                                            Безналичный расчет
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>Фамилия</label>
+                                        <input type="text" name="surname" placeholder="Иванов">
+                                    </p>
+                                    <p>
+                                        <label>Имя</label>
+                                        <input type="text" name="first_name" placeholder="Иван">
+                                    </p>
+                                    <p>
+                                        <label>Отчество</label>
+                                        <input type="text" name="patronymic" placeholder="Иванович">
+                                    </p>
+                                    <p>
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="primer@email.ru">
+                                    </p>
+                                    <p>
+                                        <label>Телефон</label>
+                                        <input type="tel" name="phone" placeholder="+78888888888">
+                                    </p>
+                                    <p>
+                                        <label>Пароль</label>
+                                        <input type="password" name="password">
+                                    </p>
+                                    <p>
+                                        <label>Подтвердите пароль</label>
+                                        <input type="password" name="password_confirm">
+                                    </p>
+                                    <p>
+                                        <label>Федеральный округ</label>
+                                        <select name="country">
+                                            <option>Центральный</option>
+                                            <option>Северо-Западный</option>
+                                            <option>Южный</option>
+                                            <option>Северо-Кавказкий</option>
+                                            <option>Приволжский</option>
+                                            <option>Уральский</option>
+                                            <option>Сибирский</option>
+                                            <option>Дальневосточный</option>
+                                        </select>
+                                    </p>
+                                    <p>Заказываю</p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="roga">
+                                            рога в количестве <input type="number"> штук
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="kopita">
+                                            копыта в количестве <input type="number"> штук
+                                        </label>
+                                    </p>
+                                    <p>Пожелания:<br>
+                                        <label>
+                                            <textarea name="pogjelania" style="height: 50px; width: 200px;"></textarea>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <button>
+                                            Подтвердить заказ
+                                        </button>
+                                    </p>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p></p>
+            <a href="#up">Наверх</a>
+            <p>&copy; Бендер и компания</p>
+        </footer>
     </div>
 </body>
 

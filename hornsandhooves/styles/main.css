@@ -118,8 +118,29 @@ footer {
     clear: left;
 }
 
+/*подсветка элементов форм*/
 input:focus,
 textarea:focus {
     border: 2px solid blue;
     background-color: lightblue;
+}
+/*оформление списка */
+nav ul{
+    list-style-image: url("../img/li.png");
+} 
+nav ul li:hover{
+    transform: translateX(10px);
+    list-style-image: none;
+    transition-duration: 0.7s;
+}
+/*оформление таблицы */
+#educationTable tr th{
+    background-color: red;
+    color: white;
+}
+.stroka td{
+    color: cadetblue;
+}
+#educationTable {
+    border: 1px cadetblue solid;
 }

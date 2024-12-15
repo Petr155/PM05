@@ -124,45 +124,105 @@ textarea:focus {
     border: 2px solid blue;
     background-color: lightblue;
 }
+
 /*оформление списка */
-nav ul{
+nav ul {
     list-style-image: url("../img/li.png");
-} 
-nav ul li:hover{
+}
+
+nav ul li:hover {
     transform: translateX(10px);
     list-style-image: none;
     transition-duration: 0.7s;
 }
+
 /*оформление таблицы */
-#educationTable tr th{
+#educationTable tr th {
     background-color: red;
     color: white;
 }
-.stroka td{
+
+.stroka td {
     color: cadetblue;
 }
+
 #educationTable {
     border: 1px cadetblue solid;
 }
+
 /*пропажа ячейки при наведение*/
-#educationTable tr th:hover{
-    color: red;
-    transition-duration: 0.5s;
+#educationTable tr th:hover,
+#educationTable tr td:hover {
+    visibility: hidden;
 }
-#educationTable tr td:hover{
-    color: whitesmoke;
-    transition-duration: 0.5s;
-}
+
 /*блок меню flexbox*/
-#navFlexbox{
+#navFlexbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#navFlexbox a{
+
+#navFlexbox a {
     padding: 5px;
 }
-#navFlexbox a:hover{
+
+#navFlexbox a:hover {
     transform: translateY(-3px);
     transition-duration: 0.7s;
+}
+
+/* При прокручивании страницы кнопка должна оставаться в нижней части экрана*/
+a[href^="#up"] {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*оформление таблицы сотрудников с помощью flexbox*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/*стиль фото сотрудников*/
+.cell img {
+    width: 80px;
+    border: 2px bisque solid;
+    border-radius: 15%;
+    box-shadow: 5px 3px 4px 2px rgb(111, 111, 111);
+}
+
+/*оформление галереи*/
+#galleryPreview {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.preview {
+    padding: 0 15px 0 0;
+}
+
+.preview div {
+    position: relative;
+    width: 100px;
+    bottom: 23px;
+    left: 3px;
+    color: rgba(255, 255, 255, 0.804);
+    background-color: rgba(111, 111, 111, 50%);
+}
+
+.preview img {
+    border: 3px black solid;
+    border-radius: 8%;
 }

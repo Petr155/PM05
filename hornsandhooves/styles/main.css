@@ -1,5 +1,5 @@
 body {
-    background-color: wheat;
+    background-image: url(../img/fon.jpg);
 }
 
 nav a,
@@ -92,15 +92,18 @@ a[href^="https://"] {
 #container {
     width: 1000px;
     margin: 0 auto;
-    background: #f0f0f0;
+    /*  полупрозрачный контейнер */
+    background: rgba(255, 255, 255, 0.5);
 }
 
 header {
     padding: 5px;
-    background: #8fa09b;
+    /*диагональный градиент*/
+    background: linear-gradient(45deg, #e45858, #3baee3);
 }
 
 #navLeft {
+    background: linear-gradient(45deg, #e4585888, #3baee388);
     width: 250px;
     float: left;
 }
@@ -112,7 +115,8 @@ main {
 }
 
 footer {
-    background: #8fa09b;
+    /*эллиптический радиальный градиент*/
+    background: radial-gradient(ellipse closest-side, #e4585888, #3baee388);
     color: #fff;
     padding: 5px;
     clear: left;
@@ -177,10 +181,15 @@ a[href^="#up"] {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    /*полупрозрачный фон*/
+    opacity: 0.5;
+}
+
+a[href^="#up"]:hover {
+    opacity: 1;
 }
 
 /*оформление таблицы сотрудников с помощью flexbox*/
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -216,13 +225,48 @@ a[href^="#up"] {
 .preview div {
     position: relative;
     width: 100px;
-    bottom: 23px;
+    bottom: 9px;
     left: 3px;
-    color: rgba(255, 255, 255, 0.804);
-    background-color: rgba(111, 111, 111, 50%);
+    color: rgb(0, 0, 255);
+    opacity: 0;
+    display: flex;
+    justify-content: center
+}
+
+.preview div p {
+    width: 101px;
+    background-color: rgba(62, 62, 62, 0.5);
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 8%;
+}
+
+.preview:hover div {
+    opacity: 1;
+    transition-duration: 0.7s;
 }
 
 .preview img {
     border: 3px black solid;
     border-radius: 8%;
+}
+/*выпадающее меню*/
+.navVap ul {
+    list-style: none;
+}
+.navVap ul {
+    border: 1px black solid;
+    background-color: rgba(216, 138, 83);
+    position: absolute; 
+    width: 140px;
+    display: none;
+}
+.navVap ul li {
+    position: relative;
+    right: 20px;
+}
+.navVap:hover ul {
+    display: block;
+    transition-duration: 0.7s;
 }

@@ -214,11 +214,30 @@ a[href^="#up"]:hover {
 }
 
 /*grid*/
-/*.unit {
+.unit {
+    border: 2px rgba(242, 194, 138, 0.466) solid;
     display: grid;
-    justify-content: space-between;
-    flex-wrap: wrap;}*/
+    grid-template: 
+    "cell1 cell2 cell3 cell4 " 250px
+    /25% 25% 25% 25%
+    ;
+}
 
+.cell1 {
+    grid-area: cell1;
+}
+
+.cell2 {
+    grid-area: cell2;
+}
+
+.cell3 {
+    grid-area: cell3;
+}
+
+.cell4 {
+    grid-area: cell4;
+}
 
 .cell {
     display: grid;

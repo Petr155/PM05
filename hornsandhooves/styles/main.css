@@ -90,7 +90,8 @@ a[href^="https://"] {
 
 /*двух колоночный макет*/
 #container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     /*  полупрозрачный контейнер */
     background: rgba(255, 255, 255, 0.5);
@@ -134,7 +135,7 @@ nav ul {
     list-style-image: url("../img/li.png");
 }
 
-nav ul li:hover {
+#navLeft ul li:hover {
     transform: translateX(10px);
     list-style-image: none;
     transition-duration: 0.7s;
@@ -152,6 +153,8 @@ nav ul li:hover {
 
 #educationTable {
     border: 1px cadetblue solid;
+    max-width: 700px;
+    width: 90%;
 }
 
 /*пропажа ячейки при наведение*/
@@ -212,14 +215,25 @@ a[href^="#up"]:hover {
 
 /*оформление галереи*/
 #galleryPreview {
-    width: 700px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
+}
+
+.frame {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .preview {
-    padding: 0 15px 0 0;
+    margin: 0 15px 0 0;
 }
 
 .preview div {
@@ -227,7 +241,6 @@ a[href^="#up"]:hover {
     width: 100px;
     bottom: 9px;
     left: 3px;
-    color: rgb(0, 0, 255);
     opacity: 0;
     display: flex;
     justify-content: center
@@ -251,22 +264,110 @@ a[href^="#up"]:hover {
     border: 3px black solid;
     border-radius: 8%;
 }
-/*выпадающее меню*/
+
+/*выпадающее вертикальное меню*/
+
 .navVap ul {
     list-style: none;
-}
-.navVap ul {
     border: 1px black solid;
-    background-color: rgba(216, 138, 83);
-    position: absolute; 
+    background: linear-gradient(45deg, #e45858, #3baee3);
+    position: absolute;
     width: 140px;
     display: none;
 }
+
 .navVap ul li {
     position: relative;
     right: 20px;
 }
+
 .navVap:hover ul {
     display: block;
     transition-duration: 0.7s;
+}
+
+/*выпадающее горизантальное меню*/
+.navVap1 ul,
+.navVap1 {
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.navVap1 ul {
+    border: 1px black solid;
+    background-color: rgba(216, 138, 83);
+    position: absolute;
+    width: 140px;
+    display: none;
+}
+
+.navVap1 li ul li {
+    position: relative;
+}
+
+.navVap1:hover ul {
+    display: block;
+    transition-duration: 0.7s;
+}
+
+.navVap1:hover {
+    transform: translateY(-3px);
+    transition-duration: 0.7s;
+}
+
+/*адаптивный макет*/
+video {
+    max-width: 700px;
+    width: 100%;
+}
+
+.gif {
+    max-width: 500px;
+    width: 100%;
+}
+
+/*медиа запросы*/
+@media screen and (max-width:1000px) {
+    #container {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    main {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+
+    #navLeft {
+        display: none;
+    }
+
+    #navFlexbox {
+        flex-wrap: wrap;
+    }
+
+    #navFlexbox a {
+        margin: 10px;
+    }
+
+    #navFlexbox a {
+        border: 1px black solid;
+        background-color: rgb(238, 163, 110);
+    }
+
+    #navFlexbox ul li ul li a {
+        font-size: 18px;
+        flex-wrap: nowrap;
+        margin: 5px;
+        border: none;
+        background: none;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    #navFlexbox {
+        flex-direction: column;
+    }
 }

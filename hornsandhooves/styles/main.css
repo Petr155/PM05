@@ -193,7 +193,7 @@ a[href^="#up"]:hover {
 }
 
 /*оформление таблицы сотрудников с помощью flexbox*/
-.row {
+/*.row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -207,11 +207,42 @@ a[href^="#up"]:hover {
 
 /*стиль фото сотрудников*/
 .cell img {
-    width: 80px;
+    width: 100px;
     border: 2px bisque solid;
     border-radius: 15%;
     box-shadow: 5px 3px 4px 2px rgb(111, 111, 111);
 }
+
+/*grid*/
+/*.unit {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;}*/
+
+
+.cell {
+    display: grid;
+    border: 2px rgba(242, 194, 138, 0.466) solid;
+    padding: 10px;
+    grid-template:
+        "img" 110px
+        "name" 30px
+        "role" 20px
+        / auto;
+}
+
+.img {
+    grid-area: img;
+}
+
+.name {
+    grid-area: name;
+}
+
+.role {
+    grid-area: role;
+}
+
 
 /*оформление галереи*/
 #galleryPreview {
